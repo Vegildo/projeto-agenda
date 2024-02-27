@@ -1,0 +1,36 @@
+<%- include('includes/head') %>
+<section class="container">
+	<h1>Título</h1>
+	<!-- <h1><%#= title %><br/>
+				<%- title %></h1> -->
+	<!-- <h1>
+				<% if (typeof title !== 'undefined') { %> 
+					<%- title %> 
+				<% } else {%>
+				title undefined 
+				<% } %>
+			</h1> -->
+
+	<!-- <h1><%- typeof title !== 'undefined' ? title : "title undefined"%></h1> -->
+
+	<!-- <h1>
+				<% for (let i = 0; i < numbers.length; i++) { %> 
+					<%- numbers[i] %><br />
+				<% } %>
+			</h1> -->
+
+	<!-- <h1>
+				<% numbers.forEach(num => { %> <%- num %> <br />
+				<% }); %>
+			</h1> -->
+	<!-- <h1><%- title %></h1>
+	<h1><%= oneVarLocal %></h1>
+	<h1><%= onVarHome %></h1> -->
+
+	<form action="/" method="post">
+		<label>Cliente:</label>
+		<input type="text" name="cliente" value="Nome completo" />
+		<button>Submit</button>
+	</form>
+</section>
+<%- include('includes/footer') %>

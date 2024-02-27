@@ -1,0 +1,13 @@
+	<% Controle de fluxo (if, for.. %>
+	<%= Imprime escapando caracteres %> //mostra
+    <%- Imprime sem escapar caracteres %> //executa
+    <%# Comentário %> 
+    <%- include('CAMINHO/ARQUIVO'); %>
+
+    Ex:
+
+    <% if (condiçao) {%>  
+        <%- CODIGUIN pra exibir algo %>
+    <% } else { %>  
+        <%- CODIGUIN pra exibir outra coisa%> 
+	<% } %>

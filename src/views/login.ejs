@@ -1,0 +1,53 @@
+<%- include('includes/head.ejs') %>
+<%- include('includes/nav.ejs') %>
+<div class="container">
+	<div class="row">
+		<div class="col-lg-2"></div>
+				
+		<div class="col-lg-8 my-3">
+			<h1 class="text-center">Página de Login e Criação de Conta</h1>
+			<p class="text-center lead">Entre ou crie sua conta abaixo:</p>
+
+			<%- include('includes/messages.ejs'); %>
+
+			<div class="row">
+				<div class="col-lg my-4">
+					<h4>Faça seu cadastro</h4>
+					<p>Se ainda não tem conta, cadastre-se abaixo:</p>
+					<form class="form-register" action="/login/register" method="POST">
+						
+						<div class="form-group">
+						  <label for="exampleInputEmail1">Seu endereço de e-mail</label>
+						  <input type="email" class="form-control" name="email">						  
+						</div>
+						<div class="form-group">
+							<label for="exampleInputEmail1">Sua senha</label>
+							<input type="password" class="form-control" name="password">						  
+						  </div>						
+						<button type="submit" class="btn btn-primary">Criar minha conta</button>
+					</form>
+				</div>
+				<div class="col-lg my-4">
+					<h4>Faça o login</h4>
+					<p>Se você já tem conta, faça o login abaixo:</p>
+					<form class="form-login" action="/login/login" method="POST">
+						<div class="form-group">
+						  <label for="exampleInputEmail1">Seu endereço de e-mail</label>
+						  <input type="email" class="form-control" name="email">						  
+						</div>
+						<div class="form-group">
+							<label for="exampleInputEmail1">Sua senha</label>
+							<input type="password" class="form-control" name="password">						  
+						  </div>						
+						<button type="submit" class="btn btn-primary">Fazer Login</button>
+					</form>
+				</div>
+			</div>				
+						
+		</div>
+
+		<div class="col-lg-2"></div>
+	</div>
+</div>
+<%- include('includes/footer.ejs') %>
+
